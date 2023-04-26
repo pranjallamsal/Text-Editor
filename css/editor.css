@@ -2,3 +2,61 @@
     position: absolute;
     top: 80px;
 }
+
+.editor-widget {
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.options {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.options button {
+    margin: 2%;
+    padding: 5px;
+    font-size: 18px;
+}
+
+.editor {
+    width: 60em;
+    height: 30em;
+    font-size: 16px;
+    padding: 15px;
+}
+
+@media (max-width: 868px) {
+    .editor {
+        width: 40em;
+    }
+}
+
+@media (max-width: 668px) {
+    .editor {
+        width: 30em;
+    }
+}
+
+@media (max-width: 568px) {
+    .editor {
+        width: 25em;
+    }
+}
+
+@media (max-width: 425px) {
+    .editor {
+        width: 20em;
+    }
+}
+
+@media (max-width: 350px) {
+    .editor {
+        width: 17em;
+    }
+}
