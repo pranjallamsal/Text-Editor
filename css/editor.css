@@ -24,6 +24,12 @@
     font-size: 18px;
     background: #1e1e1e;
     color: #fff;
+    display: inline-flex;
+    transition: all 0.5 ease-in-out;
+}
+
+.options button:hover {
+    transform: scale(1.1);
 }
 
 .editor {
