@@ -1,48 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Code Editor</title>
-
-    <!-- Remixicon -->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
-
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/nav.css">
-    <link rel="stylesheet" href="./css/editor.css">
-</head>
-
-<body>
-    <header class="nav">
-        <span>Code Editor</span>
-        <ul class="navbar">
-            <li class="link">Home</li>
-            <li class="link">About</li>
-            <li class="link">Features</li>
-            <li class="link">Contact</li>
-        </ul>
-        <button class="hamburger"><i class="ri-menu-line ham"></i></button>
-    </header>
-
-    <section class="container home">
-        <div class="editor-widget">
-            <div class="options">
-                <button type="button" class="reset-text"><i class="ri-refresh-line"></i></button>
-                <button type="button" class="open-tag"><i class="ri-code-line"></i></button>
-                <button type="button" class="self-close-tag"><i class="ri-code-s-slash-line"></i></button>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Code Editor</title>
+    
+        <!-- Remixicon -->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="stylesheet" href="./css/nav.css">
+        <link rel="stylesheet" href="./css/editor.css">
+    </head>
+    <body>
+        <header class="nav">
+            <span>Code Editor</span>
+            <ul class="navbar">
+                <li class="link">Home</li>
+                <li class="link">About</li>
+                <li class="link">Features</li>
+                <li class="link">Contact</li>
+            </ul>
+            <button class="hamburger"><i class="ri-menu-line ham"></i></button>
+        </header>
+    
+        <section class="container home">
+            <div class="editor-widget">
+                <div class="options">
+                    <button type="button" class="reset-text"><i class="ri-refresh-line"></i></button>
+                    <button type="button" class="open-tag"><i class="ri-code-line"></i></button>
+                    <button type="button" class="self-close-tag"><i class="ri-code-s-slash-line"></i></button>
+                </div>
+                <textarea class="editor" name="main-editor" id="text-editor"></textarea>
             </div>
-            <textarea class="editor" name="main-editor" id="text-editor"></textarea>
-        </div>
-    </section>
-
-    <!-- Scripts -->
-    <script src="./js/script.js"></script>
-    <script src="./js/editor.js"></script>
-    <script src="./js/autoIndent.js"></script>
-</body>
-
+        </section>
+    
+        <!-- Scripts -->
+        <script src="./js/script.js"></script>
+        <script src="./js/editor.js"></script>
+        <script src="./js/autoIndent.js"></script>
+    </body>
 </html>
