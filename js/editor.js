@@ -1,18 +1,24 @@
 const resetBtn = document.querySelector(".reset-text");
-const boldBtn = document.querySelector(".bold-text");
-const italicsBtn = document.querySelector(".italic-text");
-const underlineBtn = document.querySelector(".underline-text");
+const openTagBtn = document.querySelector(".open-tag");
+const selfCloseTagBtn = document.querySelector(".self-close-tag");
 const textArea = document.querySelector(".editor");
 
 function resetText() {
     textArea.value = "";
 }
 
-function boldText() {
+function setTag() {
     const selectedText = textArea.value.substring(textArea.selectionStart, textArea.selectionEnd);
-    const newText = "<b>" + selectedText + "</b>";
+    const newText = "<" + selectedText + ">" + "</" + selectedText + ">";
+    textArea.value = textArea.value.substring(0, textArea.selectionStart) + newText + textArea.value.substring(textArea.selectionEnd);
+}
+
+function selfCloseTag() {
+    const selectedText = textArea.value.substring(textArea.selectionStart, textArea.selectionEnd);
+    const newText = "<" + selectedText + " />";
     textArea.value = textArea.value.substring(0, textArea.selectionStart) + newText + textArea.value.substring(textArea.selectionEnd);
 }
 
 resetBtn.addEventListener("click", resetText);
-boldBtn.addEventListener("click", boldText);
+openTagBtn.addEventListener("click", setTag);
+selfCloseTagBtn.addEventListener("click", selfCloseTag);

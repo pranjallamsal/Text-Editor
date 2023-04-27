@@ -22,22 +22,45 @@
     margin: 2%;
     padding: 5px;
     font-size: 18px;
+    background: #1e1e1e;
+    color: #fff;
 }
 
 .editor {
     width: 60em;
     height: 30em;
     font-size: 16px;
-    padding: 15px;
+    padding: 20px;
+    background: #232323;
+    color: #fff;
+    border-radius: 10px;
+}
+
+@media (max-width: 1000px) {
+    .options button {
+        margin: 3%;
+    }
+    .editor {
+        width: 50em;
+    }
 }
 
 @media (max-width: 868px) {
+    .options button {
+        margin: 4%;
+        padding: 6px;
+    }
     .editor {
         width: 40em;
     }
 }
 
 @media (max-width: 668px) {
+    .options button {
+        margin: 5%;
+        padding: 8px;
+        font-size: 20px;
+    }
     .editor {
         width: 30em;
     }
