@@ -24,6 +24,8 @@
     font-size: 18px;
     background: #1e1e1e;
     color: #fff;
+    border: none;
+    box-shadow: 3px 3px 4px #141414;
     display: inline-flex;
     transition: all 0.5 ease-in-out;
 }
@@ -34,12 +36,16 @@
 
 .editor {
     width: 60em;
-    height: 30em;
+    height: 35em;
     font-size: 16px;
     padding: 20px;
+    resize: none;
+    scroll-behavior: auto;
     background: #232323;
     color: #fff;
     border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 10px #111111 inset;
 }
 
 @media (max-width: 1000px) {
