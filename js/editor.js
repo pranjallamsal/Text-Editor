@@ -22,7 +22,7 @@ function selfCloseTag() {
 
 function commentLn() {
     const selectedText = textArea.value.substring(textArea.selectionStart, textArea.selectionEnd);
-    const newText = "// " + selectedText;
+    const newText = "<!-- " + selectedText + " -->";
     textArea.value = textArea.value.substring(0, textArea.selectionStart) + newText + textArea.value.substring(textArea.selectionEnd);
 }
 
